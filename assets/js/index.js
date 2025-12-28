@@ -333,7 +333,7 @@ function moveUsingArrows(direct) {
         }
     });
     if (direct === "next") {
-        if (theChoicen === 3) {
+        if (theChoicen === carouselIndicator.length) {
             return;
         }
         console.log("nextFirreeddd")
