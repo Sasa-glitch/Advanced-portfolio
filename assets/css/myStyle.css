@@ -1,0 +1,12 @@
+.-translate-x-80 {
+  transform: translateX(-20rem);
+}
+
+.hamda {
+    color: tomato;
+}
+
+.right-20rem {
+    right: 20rem;
+    color: red;
+}
