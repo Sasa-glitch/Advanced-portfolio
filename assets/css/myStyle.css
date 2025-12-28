@@ -1,12 +1,67 @@
-.-translate-x-80 {
-  transform: translateX(-20rem);
+/* adding some classes that didn't work on the main css */
+.ring-offset-white {
+    --tw-ring-offset-color: rgba(255, 255, 255, 0.185);
 }
 
-.hamda {
-    color: tomato;
+.ring-offset-2 {
+    --tw-ring-offset-width: 2px;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+        var(--tw-ring-offset-width) var(--tw-ring-offset-color);
 }
 
-.right-20rem {
-    right: 20rem;
-    color: red;
+.ring-primary {
+    --tw-ring-color: var(--color-primary);
+}
+
+.ring-2 {
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+        calc(2px + var(--tw-ring-offset-width))
+        var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+        var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+/* adding themes */
+
+:root:has([title="Purple Blue"].active) {
+    --color-primary: #6366f1;
+    --color-secondary: #8b5cf6;
+    --color-accent: #a855f7;
+}
+:root:has([title="Pink Orange"].active) {
+    --color-primary: #ec4899;
+    --color-secondary: #f97316;
+    --color-accent: #ee68ab;
+}
+:root:has([title="Green Emerald"].active) {
+    --color-primary: #10b981;
+    --color-secondary: #059669;
+    --color-accent: #2dbe8e;
+}
+:root:has([title="Blue Cyan"].active) {
+    --color-primary: #3b82f6;
+    --color-secondary: #06b6d4;
+    --color-accent: #70a3f7;
+}
+:root:has([title="Blue Cyan"].active) {
+    --color-primary: #3b82f6;
+    --color-secondary: #06b6d4;
+    --color-accent: #70a3f7;
+}
+:root:has([title="Red Rose"].active) {
+    --color-primary: #ef4444;
+    --color-secondary: #f43f5e;
+    --color-accent: #f15e5e;
+}
+:root:has([title="Amber Orange"].active) {
+    --color-primary: #f59e0b;
+    --color-secondary: #ea580c;
+    --color-accent: #fab743;
+}
+
+/* fixing menu background */
+@media (max-width: 1024px) {
+    html:not(.dark) .nav-links {
+        background: #ffffff9a;
+    }
 }

@@ -1091,7 +1091,7 @@
         border-color: var(--color-primary);
     }
     .border-primary\/30 {
-        border-color: #6366f14d;
+        border-color: rgb(from var(--color-primary) r g b/ 0.289);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .border-primary\/30 {
@@ -1109,7 +1109,7 @@
         border-color: var(--color-secondary);
     }
     .border-secondary\/20 {
-        border-color: #8b5cf633;
+        border-color: rgb(from var(--color-primary) r g b / 0.2);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .border-secondary\/20 {
@@ -1166,7 +1166,7 @@
         background-color: var(--color-primary);
     }
     .bg-primary\/10 {
-        background-color: #6366f11a;
+        background-color: rgb(from var(--color-primary) r g b/ 0.1018);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .bg-primary\/10 {
@@ -1178,7 +1178,7 @@
         }
     }
     .bg-primary\/20 {
-        background-color: #6366f133;
+        background-color: rgb(from var(--color-primary) r g b/ 0.2);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .bg-primary\/20 {
@@ -1196,7 +1196,7 @@
         background-color: var(--color-secondary);
     }
     .bg-secondary\/20 {
-        background-color: #8b5cf633;
+        background-color: rgb(from var(--color-primary) r g b / 0.2);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .bg-secondary\/20 {
@@ -1810,7 +1810,7 @@
         color: var(--color-primary);
     }
     .text-primary\/10 {
-        color: #6366f11a;
+        color: rgb(from var(--color-primary) r g b/ 0.1);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .text-primary\/10 {
@@ -1939,7 +1939,7 @@
         }
     }
     .shadow-primary\/30 {
-        --tw-shadow-color: #6366f14d;
+        --tw-shadow-color: rgb(from var(--color-primary) r g b/ 0.3);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .shadow-primary\/30 {
@@ -1952,7 +1952,7 @@
         }
     }
     .shadow-primary\/50 {
-        --tw-shadow-color: #6366f180;
+        --tw-shadow-color: rgb(from var(--color-primary) r g b/ 0.5);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .shadow-primary\/50 {
@@ -1965,7 +1965,7 @@
         }
     }
     .shadow-secondary\/30 {
-        --tw-shadow-color: #8b5cf64d;
+        --tw-shadow-color: rgb(from var(--color-primary) r g b / 0.3);
     }
     @supports (color: color-mix(in lab, red, red)) {
         .shadow-secondary\/30 {
@@ -2209,7 +2209,7 @@
             border-color: var(--color-primary);
         }
         .hover\:border-primary\/50:hover {
-            border-color: #6366f180;
+            border-color: rgb(from var(--color-primary) r g b/ 0.5);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:border-primary\/50:hover {
@@ -2242,7 +2242,7 @@
             background-color: var(--color-primary);
         }
         .hover\:bg-primary\/20:hover {
-            background-color: #6366f133;
+            background-color: rgb(from var(--color-primary) r g b/ 0.2);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:bg-primary\/20:hover {
@@ -2260,7 +2260,7 @@
             background-color: var(--color-secondary);
         }
         .hover\:bg-secondary\/20:hover {
-            background-color: #8b5cf633;
+            background-color: rgb(from var(--color-primary) r g b / 0.2);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:bg-secondary\/20:hover {
@@ -2340,7 +2340,7 @@
                 var(--tw-shadow);
         }
         .hover\:shadow-primary\/20:hover {
-            --tw-shadow-color: #6366f133;
+            --tw-shadow-color: rgb(from var(--color-primary) r g b/ 0.2);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:shadow-primary\/20:hover {
@@ -2353,7 +2353,7 @@
             }
         }
         .hover\:shadow-primary\/30:hover {
-            --tw-shadow-color: #6366f14d;
+            --tw-shadow-color: rgb(from var(--color-primary) r g b/ 0.3);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:shadow-primary\/30:hover {
@@ -2366,7 +2366,7 @@
             }
         }
         .hover\:shadow-primary\/50:hover {
-            --tw-shadow-color: #6366f180;
+            --tw-shadow-color: rgb(from var(--color-primary) r g b/ 0.5);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:shadow-primary\/50:hover {
@@ -2379,7 +2379,7 @@
             }
         }
         .hover\:ring-primary\/50:hover {
-            --tw-ring-color: #6366f180;
+            --tw-ring-color: rgb(from var(--color-primary) r g b/ 0.5);
         }
         @supports (color: color-mix(in lab, red, red)) {
             .hover\:ring-primary\/50:hover {
@@ -2964,7 +2964,7 @@ textarea:focus-visible,
 [role="combobox"]:focus-visible {
     outline: 3px solid var(--color-primary);
     outline-offset: 2px;
-    box-shadow: 0 0 0 6px #6366f133;
+    box-shadow: 0 0 0 6px rgb(from var(--color-primary) r g b/ 0.2);
 }
 .skip-link:focus {
     z-index: 100;
@@ -3035,7 +3035,7 @@ textarea:focus-visible,
         display: block;
     }
     .nav-links a:hover {
-        background: #6366f11a;
+        background: rgb(from var(--color-primary) r g b/ 0.102);
     }
 }
 .nav-links a {
