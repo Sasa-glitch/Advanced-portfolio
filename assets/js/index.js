@@ -242,7 +242,6 @@ allFilters.forEach((filter) => {
                 "active",
                 innerFilter.contains(e.target)
             );
-            console.log(innerFilter.contains(e.target));
             if (innerFilter.classList.contains("active")) {
                 selectedButtonClasses.forEach((aClass) => {
                     innerFilter.classList.add(aClass);
@@ -333,7 +332,7 @@ function moveUsingArrows(direct) {
         }
     });
     if (direct === "next") {
-        if (theChoicen === carouselIndicator.length) {
+        if (theChoicen === carouselIndicator.length - 1) {
             return;
         }
         console.log("nextFirreeddd")
